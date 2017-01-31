@@ -1,0 +1,40 @@
+Main Ideas - 
+
+[ANIMAL]
+    Buy - 
+        Gain an animal, put in barn?
+        Gen random money value?
+    Sell - 
+        Get money value
+
+    Place -
+        Put an animal in a barn?
+
+    Feed - 
+        Like watering but for animals
+
+[CROP]
+Plants 
+    Harvestable -
+        Maybe use price
+
+    Grow amount -
+        Water field to grow, change growth state
+
+    Water amount -
+        Store?
+
+    Growth State -
+        Int with max grow state
+
+Trees
+    Collect fruit - 
+        Harvest somehow? Loot function?
+
+    Plant tree -
+        Instead of sewing
+
+Bushes
+    Pick fruits - 
+        Similar to trees
+
