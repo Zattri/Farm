@@ -1,21 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Zattri
- */
 public class Crop {
-    // Variables declared in the class
-    private String name;
-    private int price;
-    private int grow;
-    private int state;
-    private int maxState;
-    
     public Crop(String cropName, int cropPrice, int growTime, int max) {
         name = cropName;
         price = cropPrice;
@@ -24,11 +7,21 @@ public class Crop {
         maxState = max;
     }
 
+    // Variables declared in the class
+    public String name;
+    public int price;
+    public int grow;
+    public int state;
+    public int maxState;
+    
+
+
     public void prtStats(){
         System.out.println(this.name + "\nPrice - " + this.price + " | Grow Time - " + this.grow + " | State - " + getState() + "\n");
     }
 
-    public void prtName(){
+    public void prtName()
+    {
         System.out.println("Name - " + this.name);
     }
 
@@ -68,6 +61,20 @@ public class Crop {
             this.state += 1;
             System.out.println("Watered " + this.name + "...");
         }
+    }
+}
+
+class Tree extends Crop {
+
+    public int height;
+    public Tree(String cropName, int cropPrice, int growTime, int max, int treeHeight) {
+        super(cropName, cropPrice, growTime, max);
+        name = cropName + " tree";
+        height = treeHeight;
+    }
+
+    public void prtHeight(){
+        System.out.print("Height = " + this.height +"m\n");
     }
 }
 
