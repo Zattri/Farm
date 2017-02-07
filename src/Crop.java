@@ -7,6 +7,7 @@ public class Crop {
         maxState = max;
     }
 
+
     // Variables declared in the class
     public String name;
     public int price;
@@ -15,35 +16,37 @@ public class Crop {
     public int maxState;
     
 
-
     public void prtStats(){
         System.out.println(this.name + "\nPrice - " + this.price + " | Grow Time - " + this.grow + " | State - " + getState() + "\n");
     }
 
+    // Name variable functions
     public void prtName()
     {
         System.out.println("Name - " + this.name);
     }
-
     public String getName() {
         return this.name;
     }
 
+
+    // Price variable functions
     public void prtPrice(){
         System.out.println("Price - £" + this.price);
     }
-
     public int getPrice() {
         return this.price;
     }
 
+
+    // Grow variable functions
     public void prtGrow() {
         System.out.println("Grow Time - " + this.grow);
     }
-
     public int getGrowTime() {
         return this.grow;
     }
+
 
     public String getState() {
         String rtnString;
@@ -56,6 +59,7 @@ public class Crop {
         return rtnString;
     }
 
+    // Water plant function increases the state of the plant, unless it is maxed
     public void waterPlant() {
         if (this.state < this.maxState) {
             this.state += 1;
